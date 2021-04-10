@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Sid Meier´s Civilization, o cómo gamificar nuestra historia
-slug: test-post-1
+slug: civilization-cultura
 date: 2020-06-14T00:25:17.803Z
 dateModified: 2020-06-14T00:25:17.871Z
 description: ¿De dónde viene tu realidad? Averigua jugando.
@@ -11,7 +11,7 @@ tags:
   - Cultura
   - Marxismo
   - Videojuego
-featuredImage: /images/buildings.jpg
+featuredImage: /images/ft-civilization-cultura.jpg
 ---
 <!--StartFragment-->
 

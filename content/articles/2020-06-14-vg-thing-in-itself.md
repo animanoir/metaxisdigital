@@ -11,7 +11,7 @@ tags:
   - Kant
   - Experiencia virtual
   - Videojuego
-featuredImage: /images/ocean.jpg
+featuredImage: /images/ft-thing-in-itself.jpg
 ---
 <!--StartFragment-->
 

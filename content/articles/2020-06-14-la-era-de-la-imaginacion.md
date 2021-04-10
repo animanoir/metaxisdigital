@@ -1,16 +1,18 @@
 ---
 templateKey: blog-post
 title: La era de la imaginación
-slug: test-post-2
+slug: la-era-de-la-imaginacion
 date: 2020-06-14T00:27:58.628Z
 dateModified: 2020-06-14T00:27:59.324Z
-description: this is the second test post
+description: El ingeniero quedará obsoleto. Larga vida al artista.
 featuredPost: false
 category: Filosofía
 tags:
-  - Road
-  - Topic 1
-featuredImage: /images/road.jpg
+  - Creatividad
+  - Individuo
+  - Arte
+  - Sociología
+featuredImage: /images/ft-era-imaginacion.jpg
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus tellus, elementum ut porttitor eu, tincidunt id lectus. Donec lobortis semper mauris, porttitor aliquet turpis blandit sed. Quisque neque nisi, consequat ac dui sit amet, cursus varius elit. Aenean egestas odio a justo vulputate, a finibus neque blandit. Suspendisse scelerisque arcu justo, et ullamcorper purus posuere ut. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent euismod dolor eu sem dictum, et molestie nulla luctus. Sed ut arcu lectus. Duis non auctor tellus, non malesuada dui. Aenean porta felis a nibh ornare, a cursus felis mollis.
 

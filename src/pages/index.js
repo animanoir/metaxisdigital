@@ -58,7 +58,7 @@ const IndexPage = props => {
   } else {
     return (
       <Layout>
-        <SEO title="Génesis" slug="/" />
+        <SEO title="génesis" slug="/" />
         <Featured markdown={data.allMarkdownRemark} />
         <div className="flex-layout">
           <div className="cards">

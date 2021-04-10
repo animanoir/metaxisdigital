@@ -4,13 +4,14 @@ title: Promesa
 slug: test-post-3
 date: 2020-06-14T00:30:07.287Z
 dateModified: 2020-06-14T00:30:07.312Z
-description: this is the third test post
+description: Remembrenzas entre la senectud y la juventud.
 featuredPost: false
 category: Computación
 tags:
-  - Design
-  - Topic 3
-featuredImage: /images/design.jpg
+  - Videojuego
+  - Memoría
+  - Experiencia virtual
+featuredImage: /images/ft-promesa.jpg
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum sem ligula, nec placerat ex posuere a. Cras volutpat mi eget condimentum accumsan. Maecenas sed tortor enim. Sed imperdiet tincidunt nulla id suscipit. Donec mollis bibendum lobortis. Phasellus tincidunt mi non velit ornare tincidunt. Pellentesque commodo orci vel neque efficitur, id dictum nisi blandit. Mauris ut erat felis. Cras in leo sit amet tellus lacinia bibendum. Sed ut magna id urna porta semper quis non massa.
 
