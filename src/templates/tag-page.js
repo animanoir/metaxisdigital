@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 
 import { Link, graphql, useStaticQuery } from "gatsby"
+import SEO from '../components/seo'
 import { FaAngleDoubleRight } from "react-icons/fa"
 
 import Card from "../components/card"
@@ -48,17 +49,16 @@ function TagPageTemplate({ pageContext }) {
     return node.frontmatter.tags.includes(tag)
   })
 
-  const tagHeader = `${edgesWithTag.length} post${
-    totalCount === 1 ? "" : "s"
-  } tagged with "${tag}"`
+  const tagHeader = `Artículos acerca de ${tag}`
 
   return (
     <Layout pageType="Tag">
+      <SEO title={tag} />
       <div>
         <h2 className="page-header">{tagHeader}</h2>
         <div className="flex-layout">
           <div className="cards">
-            <h2 id="articles-title">Articles</h2>
+            <h2 id="articles-title">Artículos</h2>
             {edgesWithTag.map(({ node }, index) => {
               return (
                 <Card
@@ -69,7 +69,7 @@ function TagPageTemplate({ pageContext }) {
               )
             })}
             <Link to="/topics" id="all-topics-link">
-              <span>See all topics</span>
+              <span>Ver todos los tópicos</span>
               <FaAngleDoubleRight className="icon-right icon-fix" />
             </Link>
           </div>

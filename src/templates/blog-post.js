@@ -55,34 +55,34 @@ class ArticleTemplate extends Component {
                   </Link>
                 ))}
               </div>
-              <div>
-              {similarPosts.length > 0 && (
-                <h3 id="similar-posts-header">
-                  + sobre {this.props.pageContext.topic}:
-                </h3>
-              )}
-              <section>
-                {similarPosts.map(({ node }) => {
-                  return (
-                    <Card
-                      key={node.fields.slug}
-                      title={node.frontmatter.title}
-                      slug={node.fields.slug}
-                      date={node.frontmatter.date}
-                      description={node.frontmatter.description}
-                      excerpt={node.excerpt}
-                      frontmatter={node.frontmatter}
-                    />
-                  )
-                })}
-              </section>
-            </div>
             </div>
             <div
               className="article-markdown"
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
           </div>
+          <div>
+          {similarPosts.length > 0 && (
+            <h3 id="similar-posts-header">
+              + sobre {this.props.pageContext.topic}:
+            </h3>
+          )}
+          <section>
+            {similarPosts.map(({ node }) => {
+              return (
+                <Card
+                  key={node.fields.slug}
+                  title={node.frontmatter.title}
+                  slug={node.fields.slug}
+                  date={node.frontmatter.date}
+                  description={node.frontmatter.description}
+                  excerpt={node.excerpt}
+                  frontmatter={node.frontmatter}
+                />
+              )
+            })}
+          </section>
+        </div>
         </div>
       </Layout>
     )

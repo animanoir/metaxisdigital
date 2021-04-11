@@ -38,7 +38,7 @@ const Header = ({ siteTitle, siteDescription, menuOpen, setMenuOpen }) => {
               textDecoration: `none`,
             }}
           >
-            {siteTitle} | {siteDescription}
+            {siteTitle} | <span style={{fontWeight: '400'}}>{siteDescription}</span>
           </Link>
         </button>
 

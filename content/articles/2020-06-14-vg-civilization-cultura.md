@@ -6,7 +6,7 @@ date: 2020-06-14T00:25:17.803Z
 dateModified: 2020-06-14T00:25:17.871Z
 description: ¿De dónde viene tu realidad? Averigua jugando.
 featuredPost: false
-category: Virtualidad
+category: Computación
 tags:
   - Cultura
   - Marxismo

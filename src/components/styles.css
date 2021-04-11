@@ -43,12 +43,14 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+
 /* Multi-use Components */
 .tag {
   background: #000;
   color: #fff;
   padding: 5px 12px;
   margin-right: 12px;
+  margin-top: 12px;
   border: 1px solid #000;
   transition: all 0.4s ease;
 }
@@ -81,7 +83,8 @@ body {
 
 #header a {
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  /* letter-spacing: 1rem; */
 }
 
 #header .container {
@@ -677,6 +680,10 @@ footer {
 }
 
 /* About Page Styles */
+.acerca-title{
+  font-size:10rem;
+}
+
 #about {
   min-height: 420px;
   margin-top: 100px;
