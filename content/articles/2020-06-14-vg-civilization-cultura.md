@@ -11,6 +11,7 @@ tags:
   - Cultura
   - Marxismo
   - Videojuego
+  - Computación
 featuredImage: /images/ft-civilization-cultura.jpg
 ---
 <!--StartFragment-->
