@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Sid Meier´s Civilization, o cómo gamificar nuestra historia
+title: Civilization, o cómo gamificar nuestra historia
 slug: civilization-cultura
 date: 2020-06-14T00:25:17.803Z
 dateModified: 2020-06-14T00:25:17.871Z
@@ -17,6 +17,8 @@ featuredImage: /images/ft-civilization-cultura.jpg
 <!--StartFragment-->
 
 Civilization es un videojuego por turnos, dentro del género 4X (eXplore, eXpand, eXploit, eXterminate) creado por Sid Meier et al que gamifica el proceso evolutivo de la civilización humana en mecánicas simples que retratan los cambios que la sociedad ha vivido a lo largo de su historia. Pese a que va en su VI iteración, tomaré como referencia la V ya que ha sido la versión más popular hasta ahora.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XwUM33VJRbY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Desde el inicio el jugador deberá saber administrar su propia civilización hasta conseguir alguna de las distintas victorias posibles:
 

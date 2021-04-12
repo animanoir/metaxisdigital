@@ -1,61 +1,41 @@
 import React from "react"
+import _ from 'lodash'
 import { Link, useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 
 const Topics = () => {
   const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-      allMarkdownRemark(limit: 2000) {
-        group(field: frontmatter___tags) {
-          fieldValue
-          totalCount
-        }
-        edges {
-          node {
-            fields {
-              slug
-            }
-            frontmatter {
-              date(formatString: "MMMM DD, YYYY")
-              title
-              description
-              tags
-              category
-              featuredImage {
-                childImageSharp {
-                  fluid(maxWidth: 400) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-            }
-          }
-        }
+  query {
+    allMarkdownRemark(limit: 2000) {
+      group(field: frontmatter___tags) {
+        fieldValue
+        totalCount
       }
     }
+  }
   `)
 
   return (
     <Layout>
-      <h2 className="page-header">Topics List</h2>
+      <h2 className="page-header">Conceptos:</h2>
       <div id="all-topics-list">
-        {data.allMarkdownRemark.group.map(topic => (
-          <Link
-            to={`/${topic.fieldValue.toLowerCase().replace(" ", "-")}/`}
-            key={topic.fieldValue}
-            className="tag"
-          >
-            <span>
-              {topic.fieldValue} ({topic.totalCount})
-            </span>
-          </Link>
-        ))}
+        {data.allMarkdownRemark.group.map(topic => {
+          let concepto = topic.fieldValue
+          let conceptoDeburr = _.deburr(concepto)
+          return(
+            <Link
+              to={`/${conceptoDeburr.toLowerCase().replace(" ", "-")}/`}
+              key={topic.fieldValue}
+              className="tag"
+              style={{fontSize: '7rem'}}
+            >
+              <span>
+                {topic.fieldValue} ({topic.totalCount})
+              </span>
+            </Link>
+          )
+        })}
       </div>
     </Layout>
   )

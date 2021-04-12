@@ -9,7 +9,7 @@ featuredPost: false
 category: Computación
 tags:
   - Videojuego
-  - Memoría
+  - Memoria
   - Experiencia virtual
 featuredImage: /images/ft-promesa.jpg
 ---

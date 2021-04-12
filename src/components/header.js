@@ -45,7 +45,14 @@ const Header = ({ siteTitle, siteDescription, menuOpen, setMenuOpen }) => {
         <nav id="nav">
           <ul>
             <li>
-              <Link to="/acerca">Acerca</Link>
+            <Link to="/topics" id="all-topics-link">
+            <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="11" height="11"><path d="M.5 7.5a7 7 0 1014 0 7 7 0 00-14 0z" stroke="currentColor"></path></svg>
+              <span className='header-links'>Conceptos</span>
+             </Link>
+              <Link to="/acerca">
+              <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="11" height="11"><path d="M.5 7.5a7 7 0 1014 0 7 7 0 00-14 0z" stroke="currentColor"></path></svg>
+              <span className='header-links'>Acerca</span>
+              </Link>
             </li>
           </ul>
           <div id="search-box">

@@ -1,5 +1,5 @@
 /* --------------------------------- Fuentes -------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 /* Global Styles */
 * {
@@ -11,6 +11,10 @@
 html {
   font-size: 10px;
   font-smooth: auto;
+}
+
+iframe{
+  margin-bottom: 3rem;
 }
 
 ::-webkit-scrollbar{
@@ -84,7 +88,6 @@ body {
 #header a {
   color: white;
   font-size: 1.5rem;
-  /* letter-spacing: 1rem; */
 }
 
 #header .container {
@@ -102,9 +105,18 @@ body {
   display: flex;
   list-style: none;
 }
+
+.header-links {
+  margin-right: 1rem;
+  margin-left: .5rem;
+  /* font-size:1.2rem; */
+}
+
 #nav ul li {
+  display:flex;
+  flex-direction: row;
   margin: 12px;
-  line-height: 32px;
+  font-style: italic;
 }
 
 
@@ -366,13 +378,13 @@ body {
   font-size: 3.5rem!important;
   font-weight: 400;
   font-style: italic;
-  margin-bottom: 2rem;
-  font-family: 'Noto Serif', serif;
+  margin-bottom: .5rem;
+  font-family: 'Lora', serif;
 }
 
 .card-description {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 
 @media (max-width: 600px) {
@@ -612,7 +624,6 @@ footer {
   display: flex;
   flex-wrap: wrap;
   margin-top: 1rem;
-  margin-bottom: 4.5rem;
 }
 .article-image {
   width: 100%
@@ -627,9 +638,9 @@ footer {
 .article-markdown{
   text-align: justify;
   padding: 0 10rem;
-  font-size: 1.8rem;
+  font-size: 1.93rem;
   line-height: 1.9;
-  font-family: 'Noto Serif', serif;
+  font-family: 'Lora', serif;
 }
 
 .article-markdown h2,
@@ -666,7 +677,7 @@ footer {
 /* All Topics Page Styles */
 #all-topics-list a {
   display: inline-block;
-  margin-bottom: 12px;
+  margin-bottom: 42px;
 }
 #all-topics-link {
   display: flex;

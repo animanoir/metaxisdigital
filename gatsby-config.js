@@ -45,6 +45,7 @@ module.exports = {
             },
           },
           `gatsby-remark-prismjs`,
+          `gatsby-plugin-sitemap`,
           `gatsby-remark-copy-linked-files`,
         ],
       },

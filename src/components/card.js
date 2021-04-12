@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import _ from 'lodash'
 import Image from "gatsby-image"
 
 const Card = ({ frontmatter, slug }) => {
@@ -14,11 +15,14 @@ const Card = ({ frontmatter, slug }) => {
         {frontmatter.description}
       </p>
       {
-        frontmatter.tags.map( tag => (
+        frontmatter.tags.map( tag => {
+          let concepto = tag
+          let conceptoDeburr = _.deburr(tag)
+          return(
           <Link
           className="tag"
           key={tag}
-          to={`/${tag
+          to={`/${conceptoDeburr
             .split(" ")
             .join("-")
             .split("/")
@@ -27,7 +31,8 @@ const Card = ({ frontmatter, slug }) => {
         >
           {tag}
           </Link>
-        ))
+          )
+        })
       }
       </figcaption>
       <Link to={slug} style={{width: '100%'}}>

@@ -15,12 +15,13 @@ tags:
   - Filosofía
 featuredImage: /images/ft-era-imaginacion.jpg
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus tellus, elementum ut porttitor eu, tincidunt id lectus. Donec lobortis semper mauris, porttitor aliquet turpis blandit sed. Quisque neque nisi, consequat ac dui sit amet, cursus varius elit. Aenean egestas odio a justo vulputate, a finibus neque blandit. Suspendisse scelerisque arcu justo, et ullamcorper purus posuere ut. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent euismod dolor eu sem dictum, et molestie nulla luctus. Sed ut arcu lectus. Duis non auctor tellus, non malesuada dui. Aenean porta felis a nibh ornare, a cursus felis mollis.
+"*It took the universe 10 billion years to create a species that could speak. It took that species 3 million
+years to create a communication tool called writing. Then just 12,000 years to create the printing press.
+500 years to create the computer.*" - Charlie Magee, *The Age of Imagination*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus aliquet tortor. Morbi turpis lectus, convallis convallis ultrices at, blandit in velit. Sed sed lorem eu augue tincidunt porta. Proin laoreet metus turpis, eu dignissim velit mattis nec. Vivamus rhoncus dolor eget bibendum rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut sit amet est dui.
+La sociedad comenzó a mutar con una rapidez como nunca se había dado gracias a la Revolución Industrial, que comenzó a mediados del siglo XVIII.
 
-In sit amet semper turpis, ac suscipit sem. Donec consectetur nec nunc finibus rhoncus. In hac habitasse platea dictumst. Suspendisse consectetur tristique odio sed mollis. Quisque sit amet turpis ex. Curabitur nec convallis ligula. Quisque eget varius ipsum. Aenean luctus lacinia enim, et ultricies quam mattis porttitor.
-
-Cras elementum vel mauris at pellentesque. Quisque et sem id dolor feugiat lobortis. In auctor maximus enim, eu blandit risus imperdiet et. Etiam lacinia, quam in efficitur rutrum, lacus massa porta ligula, eu ornare dui neque a felis. Nunc sit amet dapibus nunc. Mauris egestas condimentum est, non sodales eros malesuada vitae. Phasellus porta nunc eu iaculis lacinia. Fusce pulvinar vehicula tincidunt. Proin tincidunt a libero id egestas. Cras dignissim eros et erat varius hendrerit. Etiam varius iaculis enim nec fringilla. Mauris ut euismod dui, et molestie magna. Donec a felis sem. In fringilla posuere accumsan. Aenean massa massa, mollis non varius feugiat, tristique vel urna.
-
-Duis at ullamcorper orci. Aliquam non convallis dolor. Etiam tristique neque enim. Fusce in varius augue, ut aliquam nisl. Ut non aliquam erat. Proin ut justo tortor. Quisque lacinia iaculis mollis. Suspendisse ante lorem, vehicula at elementum eget, iaculis eget ante. Donec semper nunc turpis, a imperdiet augue rhoncus in.
+https://es.wikipedia.org/wiki/Revoluci%C3%B3n_Industrial
+https://es.wikipedia.org/wiki/Segunda_Revoluci%C3%B3n_Industrial
+https://es.wikipedia.org/wiki/Revoluci%C3%B3n_francesa
+https://es.wikipedia.org/wiki/Burgues%C3%ADa
