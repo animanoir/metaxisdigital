@@ -3,6 +3,7 @@ module.exports = {
     title: `metaxis.digital`,
     description: `filosofía y computación`,
     author: `fantasma`,
+    siteUrl: `https://metaxis.digital`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
