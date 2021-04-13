@@ -28,7 +28,7 @@ const Topics = () => {
               to={`/${conceptoDeburr.toLowerCase().replace(" ", "-")}/`}
               key={topic.fieldValue}
               className="tag"
-              style={{fontSize: '7rem'}}
+              style={{fontSize: '5rem'}}
             >
               <span>
                 {topic.fieldValue} ({topic.totalCount})

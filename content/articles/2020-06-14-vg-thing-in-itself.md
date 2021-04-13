@@ -1,10 +1,10 @@
 ---
 templateKey: blog-post
 title: Thing-in-Itself
-slug: test-post-4
+slug: vg-thing-in-itself
 date: 2020-06-14T00:31:43.294Z
 dateModified: 2020-06-14T00:31:43.316Z
-description: this is the fourth post
+description: Realidades tangentes, o por qué nunca entenderás al otro realmente.
 featuredPost: false
 category: Filosofía
 tags:

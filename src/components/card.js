@@ -16,7 +16,6 @@ const Card = ({ frontmatter, slug }) => {
       </p>
       {
         frontmatter.tags.map( tag => {
-          let concepto = tag
           let conceptoDeburr = _.deburr(tag)
           return(
           <Link

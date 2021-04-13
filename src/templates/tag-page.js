@@ -1,12 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
-
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import SEO from '../components/seo'
-import { FaAngleDoubleRight } from "react-icons/fa"
-
 import Card from "../components/card"
-import CardSmall from "../components/cardSmall"
 
 function TagPageTemplate({ pageContext }) {
   const data = useStaticQuery(graphql`
@@ -67,12 +63,7 @@ function TagPageTemplate({ pageContext }) {
                 />
               )
             })}
-            <Link to="/topics" id="all-topics-link">
-              <span>Ver todos los tópicos</span>
-              <FaAngleDoubleRight className="icon-right icon-fix" />
-            </Link>
           </div>
-
         </div>
       </div>
     </Layout>
