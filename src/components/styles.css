@@ -857,23 +857,26 @@ footer {
     display: block;
     width: 100%;
   }
-  .article-container{
+
+  .article-container {
     flex-direction: column;
     margin-bottom: 0;
   }
 
-  .article-title{
+  .article-title {
     font-size: 4rem;
   }
-  .article-left-container{
-    width:100%;
+
+  .article-left-container {
+    width: 100%;
   }
-  .article-markdown{
-    padding:1rem;
+
+  .article-markdown {
+    padding: 1rem;
   }
 
   .licencia {
-    margin: 1rem 0;
+    margin: 1rem;
   }
 
   .icon-container {
@@ -881,7 +884,9 @@ footer {
   }
 }
 
-
+.licencia {
+  margin-right: 1rem;
+}
 
 .link-fantasma {
   color: white;
