@@ -18,7 +18,7 @@ const Topics = () => {
 
   return (
     <Layout>
-      <h2 className="page-header">Conceptos:</h2>
+      <h2 className="page-header"></h2>
       <div id="all-topics-list">
         {data.allMarkdownRemark.group.map(topic => {
           let concepto = topic.fieldValue

@@ -7,7 +7,7 @@ const Card = ({ frontmatter, slug }) => {
   return (
     <figure className="card-styles">
 
-      <figcaption style={{width: '100%'}}>
+      <figcaption className='card-container'>
       <Link to={slug} >
         <h3 className='card-title'>{frontmatter.title}</h3>
       </Link>

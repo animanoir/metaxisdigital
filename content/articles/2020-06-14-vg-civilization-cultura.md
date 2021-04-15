@@ -18,8 +18,6 @@ featuredImage: /images/ft-civilization-cultura.jpg
 
 Civilization es un videojuego por turnos, dentro del género 4X (eXplore, eXpand, eXploit, eXterminate) creado por Sid Meier et al que gamifica el proceso evolutivo de la civilización humana en mecánicas simples que retratan los cambios que la sociedad ha vivido a lo largo de su historia. Pese a que va en su VI iteración, tomaré como referencia la V ya que ha sido la versión más popular hasta ahora.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XwUM33VJRbY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 Desde el inicio el jugador deberá saber administrar su propia civilización hasta conseguir alguna de las distintas victorias posibles:
 
 Científica: Ser la primer civilización en construir un programa espacial robusto. Religiosa: Lograr que todas las civilizaciones sigan tu religión. Cultural: Tener la mayor cantidad de “turismo” en tu civilización (que se consigue principalmente construyendo Maravillas). Militar: Aniquilar el resto de civilizaciones con el uso de la fuerza. Diplomática: Tener la mejor relación diplomática entre todas las civilizaciones (es decir, que voten a tu favor). Por puntos: Si al turno, normalmente 500, no se llega a alguna de las victorias anteriores, el sistema determinará el puntaje del ganador. Dado que el juego se basa en la historia de la humanidad, todas las civilizaciones siguen la misma trayectoria de evolución científica y social, comenzando con la Agricultura como génesis de todas las demás. Y para políticas sociales, uno puede escoger entre Tradición y Libertad.

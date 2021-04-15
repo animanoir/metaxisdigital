@@ -77,10 +77,6 @@ const IndexPage = props => {
             })}
           </div>
         </div>
-        <Link to="/archive/2" id="archive-link">
-          + artículos
-          <FaAngleDoubleRight className="icon-right" />
-        </Link>{" "}
         <br />
       </Layout>
     )
