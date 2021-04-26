@@ -125,15 +125,6 @@ const Header = ({ siteTitle, siteDescription, menuOpen, setMenuOpen }) => {
             </form>
             <IoIosSearch />
           </div>
-          {menuOpen ? (
-            <button className="menu-button" onClick={() => setMenuOpen(false)}>
-              <MdClose />
-            </button>
-          ) : (
-            <button className="menu-button" onClick={() => setMenuOpen(true)}>
-              <FiMenu />
-            </button>
-          )}
         </nav>
       </div>
       {menuOpen && (

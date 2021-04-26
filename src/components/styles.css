@@ -8,6 +8,14 @@
   box-sizing: border-box;
 }
 
+::selection {
+  background: red; /* WebKit/Blink Browsers */
+  color: white;
+}
+::-moz-selection {
+  background: red; /* Gecko Browsers */
+}
+
 html {
   font-size: 10px;
   font-smooth: auto;
@@ -58,19 +66,18 @@ body {
 /* Header (Navbar) Section Styles */
 #header {
   position: fixed;
+  padding-top: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
   width: 100%;
-  height: 40px;
   top: 0;
-  box-shadow: 0px 3px 4px 0 rgba(0, 0, 0, 0.03);
+  /* box-shadow: 0px 3px 4px 0 rgba(0, 0, 0, 0.03); */
   z-index: 50;
-  background: black;
 }
 
 #header a {
-  color: white;
-  font-size: 1.5rem;
+  color: black;
+  font-size: 1.7rem;
 }
 
 #header .container {
@@ -257,6 +264,7 @@ body {
 
 .cards {
   width: 100%;
+  margin-top: 15rem;
 }
 
 .cards h2 {
@@ -274,11 +282,11 @@ body {
 }
 
 .card-styles {
-  margin-bottom: 30px;
+  margin-bottom: 10rem;
   padding-bottom: 25px;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid #e6e6e6;
+  /* border-bottom: 1px solid #e6e6e6; */
   display: flex;
   flex-direction: row;
   position: relative;
@@ -511,7 +519,7 @@ footer {
 .article-container {
   display: flex;
   margin-top: 15rem;
-  margin-bottom: 20rem;
+  margin-bottom: 15rem;
 }
 
 .article-title {
@@ -539,8 +547,9 @@ footer {
 
 .article-markdown {
   text-align: justify;
-  padding-left: 10rem;
-  font-size: 1.93rem;
+  margin-top: 10rem;
+  padding: 0 10rem;
+  font-size: 2rem;
   line-height: 1.9;
   font-family: 'Lora', serif;
 }
@@ -759,6 +768,17 @@ footer {
   transition: all 0.4s ease;
 }
 
+@media (max-width: 1400px){
+  .article-container{
+    margin: 5rem 0;
+  }
+  .article-markdown {
+    padding-left: 7rem;
+  }
+  .article-title {
+    font-size: 4.5rem;
+  }
+}
 
 
 @media (max-width: 1000px) {

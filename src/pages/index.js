@@ -60,7 +60,6 @@ const IndexPage = props => {
         <SEO title="génesis" slug="/" />
         <div className="flex-layout">
           <div className="cards">
-            <h2 id="articles-title">todos los artículos</h2>
             {data.allMarkdownRemark.edges.map(({ node }, index) => {
               if (index < 1) {
                 return null
