@@ -58,7 +58,7 @@ body {
 }
 
 .page-header {
-  margin: 102px 0 42px 0;
+  margin-top: 102px;
   font-size: 32px;
   font-weight: 400;
 }
@@ -126,9 +126,8 @@ body {
 }
 
 #search-box form input {
-  height: 32px;
   padding: 7px;
-  border: 1px solid rgb(188, 188, 188);
+  border: 1px solid white;
   border-radius: 4px;
   font-size: 13px;
   margin-left: 16px;
@@ -328,15 +327,14 @@ body {
 
 .card-title {
   font-size: 4.5rem !important;
-  font-weight: bold;
-  font-style: italic;
+  font-weight: 400;
   margin-bottom: 1rem;
   font-family: 'Lora', serif;
 }
 
 .card-description {
   font-size: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 7rem;
 }
 
 
@@ -547,7 +545,6 @@ footer {
 
 .article-markdown {
   text-align: justify;
-  margin-top: 10rem;
   padding: 0 10rem;
   font-size: 2rem;
   line-height: 1.9;
@@ -924,6 +921,10 @@ footer {
 }
 
 .acerca-about {
-  margin: 3rem 0 3rem 3rem;
-  font-size: 3.5rem;
+  /* margin: 20rem; */
+  /* text-align: justify; */
+  /* font-family: 'Lora', serif; */
+  font-size: 5.5rem;
+  word-wrap: break-word;
+  color: crimson;
 }

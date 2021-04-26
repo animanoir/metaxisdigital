@@ -1,11 +1,8 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
-import { FaAngleDoubleRight } from "react-icons/fa"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Card from "../components/card"
-import Featured from "../components/featured"
 import Search from "../components/search"
 
 const IndexPage = props => {
@@ -61,7 +58,7 @@ const IndexPage = props => {
         <div className="flex-layout">
           <div className="cards">
             {data.allMarkdownRemark.edges.map(({ node }, index) => {
-              if (index < 1) {
+              if (index < 0) {
                 return null
               } else {
                 return (
