@@ -38,17 +38,22 @@ const Header = ({ siteTitle, siteDescription, menuOpen, setMenuOpen }) => {
     'simbolismo',
     'surrealismo',
     'conciencia',
-    'antimateria'
+    'antimateria',
+    'Jung',
+    'materia'
   ]
   const antitesisPalabras = [
     'computación',
     'psicología',
     'matemáticas',
     'antitesis',
+    'antimateria',
+    'máquinas',
     'luna',
     'antimateria',
     'nada',
-    'metamorfosis'
+    'metamorfosis',
+    'Freud'
   ]
   const [scrollY, setScrollY] = useState(0)
   const [tesis, setTesis] = useState('filosofía')

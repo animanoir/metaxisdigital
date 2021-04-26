@@ -24,7 +24,7 @@ const Footer = () => {
               href="https://www.instagram.com/fantasma.rip/"
               rel="noopener noreferrer"
             >
-              <span className="icon-container" id="fb-icon">
+              <span className="icon-container" id="ig-icon">
                 .ig
               </span>
             </a>

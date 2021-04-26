@@ -99,7 +99,7 @@ export const pageQuery = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-      excerpt(pruneLength: 160)
+      excerpt(pruneLength: 420)
       html
       frontmatter {
         title
@@ -128,6 +128,7 @@ export const pageQuery = graphql`
             title
             tags
             category
+            description
             featuredImage {
               childImageSharp {
                 fluid(maxWidth: 400) {

@@ -45,13 +45,11 @@ function TagPageTemplate({ pageContext }) {
     return node.frontmatter.tags.includes(tag)
   })
 
-  // const tagHeader = `Artículos acerca de ${tag}`
-
   return (
     <Layout pageType="Tag">
       <SEO title={tag} />
       <div>
-        <h2 className="page-header">Artículos acerca de <b>{tag}</b>:</h2>
+        <h2 className="page-header"><b>{tag}</b>:</h2>
         <div className="flex-layout">
           <div className="cards">
             {edgesWithTag.map(({ node }, index) => {
