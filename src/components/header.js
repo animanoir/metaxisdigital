@@ -1,10 +1,15 @@
 import { Link, useStaticQuery, graphql, navigate } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import React, { useEffect, useState } from "react"
 
 import { FiMenu } from "react-icons/fi"
 import { MdClose } from "react-icons/md"
 import { IoIosSearch } from "react-icons/io"
+
+
+Number.prototype.map = function (in_min, in_max, out_min, out_max) {
+  return (this - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
 
 const Header = ({ siteTitle, siteDescription, menuOpen, setMenuOpen }) => {
   const data = useStaticQuery(graphql`
@@ -19,6 +24,62 @@ const Header = ({ siteTitle, siteDescription, menuOpen, setMenuOpen }) => {
       }
     }
   `)
+
+  const tesisPalabras = [
+    'filosofía',
+    'arte',
+    'fantasmas',
+    'tesis',
+    'sol',
+    'vida',
+    'muerte',
+    'ser',
+    'meditaciones',
+    'simbolismo',
+    'surrealismo',
+    'conciencia',
+    'antimateria'
+  ]
+  const antitesisPalabras = [
+    'computación',
+    'psicología',
+    'matemáticas',
+    'antitesis',
+    'luna',
+    'antimateria',
+    'nada',
+    'metamorfosis'
+  ]
+  const [scrollY, setScrollY] = useState(0)
+  const [tesis, setTesis] = useState('filosofía')
+  const [antitesis, setAntitesis] = useState('computación')
+
+
+  function logit() {
+    setScrollY(window.pageYOffset);
+  }
+
+  useEffect(() => {
+    function watchScroll() {
+      window.addEventListener('scroll', logit)
+    }
+
+    watchScroll()
+
+    return () => {
+      window.removeEventListener('scroll', logit)
+    }
+  })
+
+  useEffect(() => {
+    let selectedTesis = tesisPalabras[Math.floor(Math.random() * tesisPalabras.length)]
+    let selectedAntitesis = antitesisPalabras[Math.floor(Math.random() * antitesisPalabras.length)]
+    return (
+      setTesis(selectedTesis),
+      setAntitesis(selectedAntitesis)
+
+    )
+  }, [scrollY])
 
   return (
     <header id="header">
@@ -38,7 +99,7 @@ const Header = ({ siteTitle, siteDescription, menuOpen, setMenuOpen }) => {
               textDecoration: `none`,
             }}
           >
-            {siteTitle} | <span style={{fontWeight: '400'}}>{siteDescription}</span>
+            {siteTitle} | <span style={{fontWeight: '400'}}>{tesis} y {antitesis}</span>
           </Link>
         </button>
 

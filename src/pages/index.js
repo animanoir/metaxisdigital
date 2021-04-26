@@ -58,12 +58,11 @@ const IndexPage = props => {
     return (
       <Layout>
         <SEO title="génesis" slug="/" />
-        <Featured markdown={data.allMarkdownRemark} />
         <div className="flex-layout">
           <div className="cards">
-            <h2 id="articles-title">+ artículos</h2>
+            <h2 id="articles-title">todos los artículos</h2>
             {data.allMarkdownRemark.edges.map(({ node }, index) => {
-              if (index < 3) {
+              if (index < 1) {
                 return null
               } else {
                 return (

@@ -6,7 +6,12 @@ import Image from "gatsby-image"
 const Card = ({ frontmatter, slug }) => {
   return (
     <figure className="card-styles">
-
+      <Link to={slug} style={{width: '100%'}}>
+      <Image
+        className="card-image"
+        fluid={frontmatter.featuredImage.childImageSharp.fluid}
+      />
+      </Link>
       <figcaption className='card-container'>
       <Link to={slug} >
         <h3 className='card-title'>{frontmatter.title}</h3>
@@ -34,12 +39,6 @@ const Card = ({ frontmatter, slug }) => {
         })
       }
       </figcaption>
-      <Link to={slug} style={{width: '100%'}}>
-      <Image
-        className="card-image"
-        fluid={frontmatter.featuredImage.childImageSharp.fluid}
-      />
-    </Link>
 
     </figure>
   )
