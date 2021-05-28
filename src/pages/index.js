@@ -57,7 +57,6 @@ const IndexPage = props => {
         <SEO title="génesis" slug="/" />
         <div className="flex-layout util-margintop">
           <div className="cards">
-          <p style={{marginBottom: '3rem', color: 'crimson', fontSize: '1.5rem'}}>(artículos en desarrollo)</p>
             {data.allMarkdownRemark.edges.map(({ node }, index) => {
               if (index < 0) {
                 return null

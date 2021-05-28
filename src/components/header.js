@@ -113,23 +113,12 @@ const Header = ({ siteTitle, siteDescription, menuOpen, setMenuOpen }) => {
             <li>
             <Link to="/topics" id="all-topics-link">
               <span className='header-links'>Conceptos</span>
-             </Link>
+            </Link>
               <Link to="/acerca">
               <span className='header-links'>Acerca</span>
               </Link>
             </li>
           </ul>
-          <div id="search-box">
-            <form
-              onSubmit={e => {
-                e.preventDefault()
-                navigate(`/?s=${e.target.query.value.toLowerCase()}`)
-              }}
-            >
-              <input type="text" id="query" aria-label="Search" />
-            </form>
-            <IoIosSearch />
-          </div>
         </nav>
       </div>
       {menuOpen && (

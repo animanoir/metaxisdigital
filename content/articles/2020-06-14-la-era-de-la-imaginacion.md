@@ -15,13 +15,29 @@ tags:
   - Filosofía
 featuredImage: /images/ft-era-imaginacion.jpg
 ---
-"*It took the universe 10 billion years to create a species that could speak. It took that species 3 million
+“*It took the universe 10 billion years to create a species that could speak. It took that species 3 million
 years to create a communication tool called writing. Then just 12,000 years to create the printing press.
-500 years to create the computer.*" - Charlie Magee, *The Age of Imagination*
+500 years to create the computer.**” - Charlie Magee, *The Age of Imagination*
 
-La sociedad comenzó a mutar con una rapidez como nunca se había dado gracias a la Revolución Industrial, que comenzó a mediados del siglo XVIII.
+*La era de la información* fue la era
 
-https://es.wikipedia.org/wiki/Revoluci%C3%B3n_Industrial
-https://es.wikipedia.org/wiki/Segunda_Revoluci%C3%B3n_Industrial
-https://es.wikipedia.org/wiki/Revoluci%C3%B3n_francesa
-https://es.wikipedia.org/wiki/Burgues%C3%ADa
+*“The world needs stories,” he told me, “We are drowning in data, and we need people to weave stories. Tell them that.”* - Syd Lieberman
+
+<span id="palabra-1"></span>
+
+
+<script>
+  let idPalabra = document.querySelector('#palabra-1');
+  let palabra1 = 'Vivimos';
+  let palabra2 = 'Vivíamos';
+
+  idPalabra.textContent = palabra1;
+
+  setInterval(function(){
+      if (idPalabra.textContent === palabra1) {
+          idPalabra.textContent = palabra2;
+      } else {
+          idPalabra.textContent = palabra1;
+      }
+  }, 1000);
+</script>

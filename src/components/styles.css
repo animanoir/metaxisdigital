@@ -130,7 +130,8 @@ body {
 
 #search-box form input {
   padding: 7px;
-  border: 1px solid white;
+  background-color: rgba(255,255,255,0);
+  border: 1px solid rgba(255,255,255,0);
   border-radius: 4px;
   font-size: 13px;
   margin-left: 16px;
@@ -266,7 +267,7 @@ body {
 
 .cards {
   width: 100%;
-  margin-top: 7rem;
+  /* margin-top: 7rem; */
 }
 
 .cards h2 {
@@ -513,18 +514,19 @@ footer {
 }
 
 .article-left-container {
-  width: 30%;
+  width: 100%;
 }
 
 .article-container {
   display: flex;
-  margin-top: 15rem;
-  margin-bottom: 15rem;
+  flex-direction: column;
+  width:60%;
+  margin:15rem auto;
 }
 
 .article-title {
   font-weight: 700;
-  font-size: 5.5rem;
+  font-size: 7rem;
   line-height: 1.2;
 
 }
@@ -538,7 +540,7 @@ footer {
 .article-tags {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 1rem;
+  margin: 1.5rem 0;
 }
 
 .article-image {
@@ -547,7 +549,6 @@ footer {
 
 .article-markdown {
   text-align: justify;
-  padding-left: 10rem;
   word-wrap: break-word;
   font-size: 2rem;
   line-height: 1.9;
@@ -768,21 +769,6 @@ footer {
   transition: all 0.4s ease;
 }
 
-@media (max-width: 1400px) {
-  .article-container {
-    margin: 5rem 0;
-  }
-
-  .article-markdown {
-    padding-left: 7rem;
-  }
-
-  .article-title {
-    font-size: 4.5rem;
-  }
-}
-
-
 @media (max-width: 1000px) {
   .card-description {
     font-size: 1.5rem;
@@ -863,8 +849,6 @@ footer {
     height: auto;
   }
 
-
-
   .sidebar {
     width: 100%;
     padding-left: 0;
@@ -886,20 +870,11 @@ footer {
 
   .article-container {
     flex-direction: column;
-    margin-top: 1rem;
-    margin-bottom: 0;
+    width: 100%;
   }
 
   .article-title {
     font-size: 4rem;
-  }
-
-  .article-left-container {
-    width: 100%;
-  }
-
-  .article-markdown {
-    padding: 1rem;
   }
 
   .licencia {
@@ -936,4 +911,12 @@ footer {
 
 .util-margintop{
   margin-top: 7rem;
+}
+
+blockquote {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
 }
