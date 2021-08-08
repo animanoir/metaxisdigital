@@ -1,10 +1,9 @@
 import React, { Component } from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import Image from "gatsby-image"
 import SEO from "../components/seo"
 import Card from "../components/card"
-
+import { Disqus } from "gatsby-plugin-disqus"
 class ArticleTemplate extends Component {
   render() {
     const { data, pageContext } = this.props
@@ -29,14 +28,8 @@ class ArticleTemplate extends Component {
           description={post.frontmatter.description}
         />
         <div id="article">
-          <header>
-            <Image
-              fluid={post.frontmatter.featuredImage.childImageSharp.fluid}
-              className="article-image"
-            />
-            </header>
-            <div className='article-container'>
-            <div className='article-left-container'>
+          <div className="article-container">
+            <div className="post-header">
               <h1 className="article-title">{post.frontmatter.title}</h1>
               <p className="article-date">{post.frontmatter.date}</p>
               <div className="article-tags">
@@ -60,29 +53,31 @@ class ArticleTemplate extends Component {
               className="article-markdown"
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
+            <Disqus
+              config={{
+                identifier: post.id,
+                title: post.frontmatter.title,
+              }}
+            />
           </div>
-          <div>
-          {similarPosts.length > 0 && (
-            <h3 id="similar-posts-header">
-              +
-            </h3>
-          )}
-          <section>
-            {similarPosts.map(({ node }) => {
-              return (
-                <Card
-                  key={node.fields.slug}
-                  title={node.frontmatter.title}
-                  slug={node.fields.slug}
-                  date={node.frontmatter.date}
-                  description={node.frontmatter.description}
-                  excerpt={node.excerpt}
-                  frontmatter={node.frontmatter}
-                />
-              )
-            })}
-          </section>
-        </div>
+          <div class="main-container">
+            {similarPosts.length > 0 && <h3 id="similar-posts-header">+</h3>}
+            <section>
+              {similarPosts.map(({ node }) => {
+                return (
+                  <Card
+                    key={node.fields.slug}
+                    title={node.frontmatter.title}
+                    slug={node.fields.slug}
+                    date={node.frontmatter.date}
+                    description={node.frontmatter.description}
+                    excerpt={node.excerpt}
+                    frontmatter={node.frontmatter}
+                  />
+                )
+              })}
+            </section>
+          </div>
         </div>
       </Layout>
     )
@@ -90,11 +85,13 @@ class ArticleTemplate extends Component {
 }
 
 export default ArticleTemplate
+
 export const pageQuery = graphql`
   query ArticleBySlug($slug: String!) {
     site {
       siteMetadata {
         title
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {

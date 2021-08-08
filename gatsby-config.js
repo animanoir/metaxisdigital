@@ -3,7 +3,7 @@ module.exports = {
     title: `metaxis.digital`,
     description: `filosofía y computación`,
     author: `fantasma`,
-    siteUrl: `https://metaxis.digital`
+    siteUrl: `https://metaxis.digital`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -11,6 +11,12 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-catch-links`,
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `metaxisdigital`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

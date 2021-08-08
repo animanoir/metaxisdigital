@@ -1,8 +1,4 @@
 import React from "react"
-import {
-  TiSocialTwitter,
-  TiSocialInstagram
-} from "react-icons/ti"
 
 const Footer = () => {
   return (
@@ -19,19 +15,30 @@ const Footer = () => {
                 .tw
               </span>
             </a>
-            <a
-              target="_blank"
-              href="https://www.instagram.com/fantasma.rip/"
-              rel="noopener noreferrer"
-            >
-              <span className="icon-container" id="ig-icon">
-                .ig
-              </span>
-            </a>
           </div>
         </div>
-        <div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es"><img className='licencia' alt="Creative Commons License" style={{borderWidth: '0px'}} src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /></div>
-        <div className='footer-fantasma'><p>Una iniciativa de <a class="link-fantasma" href='https://fantasma.rip/'>fantasma</a></p></div>
+        <div>
+          <a
+            rel="license"
+            href="https://creativecommons.org/licenses/by-sa/4.0/deed.es"
+          >
+            <img
+              className="licencia"
+              alt="Creative Commons License"
+              style={{ borderWidth: "0px" }}
+              src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"
+            />
+          </a>
+          <br />
+        </div>
+        <div className="footer-fantasma">
+          <p>
+            Una iniciativa de{" "}
+            <a class="link-fantasma" href="https://fantasma.rip/">
+              fantasma
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   )

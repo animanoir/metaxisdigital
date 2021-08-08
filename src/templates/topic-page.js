@@ -47,8 +47,7 @@ const TopicPageTemplate = ({ pageContext }) => {
 
   return (
     <Layout pageType="Topic">
-      <div className="topic-page-header">
-      </div>
+      <div className="topic-page-header"></div>
       <div className="flex-layout">
         <div className="cards">
           <h2 id="articles-title"></h2>

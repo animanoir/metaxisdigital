@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Card from "../components/card"
@@ -55,7 +55,7 @@ const IndexPage = props => {
     return (
       <Layout>
         <SEO title="génesis" slug="/" />
-        <div className="flex-layout util-margintop">
+        <div className="flex-layout util-margintop main-container">
           <div className="cards">
             {data.allMarkdownRemark.edges.map(({ node }, index) => {
               if (index < 0) {

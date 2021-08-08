@@ -13,4 +13,5 @@ tags:
   - Videojuego
 featuredImage: /images/ft-thing-in-itself.jpg
 ---
+
 ## Artículo en desarrollo

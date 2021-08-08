@@ -14,4 +14,5 @@ tags:
   - Medios
 featuredImage: /images/ft-era-imaginacion.jpg
 ---
+
 ## Artículo en desarrollo

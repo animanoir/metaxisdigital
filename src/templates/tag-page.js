@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import { graphql, useStaticQuery } from "gatsby"
-import SEO from '../components/seo'
+import SEO from "../components/seo"
 import Card from "../components/card"
 
 function TagPageTemplate({ pageContext }) {
@@ -49,7 +49,9 @@ function TagPageTemplate({ pageContext }) {
     <Layout pageType="Tag">
       <SEO title={tag} />
       <div>
-        <h2 className="page-header"><b>{tag}</b>:</h2>
+        <h2 className="page-header">
+          <b>{tag}</b>:
+        </h2>
         <div className="flex-layout">
           <div className="cards">
             {edgesWithTag.map(({ node }, index) => {

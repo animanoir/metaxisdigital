@@ -22,17 +22,12 @@ const Featured = ({ markdown }) => {
                   />
                   <figcaption>
                     <h2>{node.frontmatter.title}</h2>
-                    <span style={{display: 'flex', marginTop: '1rem'}}>
-                    {
-                      node.frontmatter.tags.map( tag => (
-                        <p
-                        key={tag}
-                        style={{marginRight: '1rem'}}
-                        >
-                        {tag}
+                    <span style={{ display: "flex", marginTop: "1rem" }}>
+                      {node.frontmatter.tags.map(tag => (
+                        <p key={tag} style={{ marginRight: "1rem" }}>
+                          {tag}
                         </p>
-                        ))
-                      }
+                      ))}
                     </span>
                   </figcaption>
                 </Link>
@@ -50,18 +45,15 @@ const Featured = ({ markdown }) => {
                     fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
                   />
                   <figcaption>
-                    <h2 style={{fontSize: '2rem'}}>{node.frontmatter.title}</h2>
-                    <span style={{display: 'flex', marginTop: '1rem'}}>
-                    {
-                      node.frontmatter.tags.map( tag => (
-                        <p
-                        key={tag}
-                        style={{marginRight: '1rem'}}
-                        >
-                        {tag}
+                    <h2 style={{ fontSize: "2rem" }}>
+                      {node.frontmatter.title}
+                    </h2>
+                    <span style={{ display: "flex", marginTop: "1rem" }}>
+                      {node.frontmatter.tags.map(tag => (
+                        <p key={tag} style={{ marginRight: "1rem" }}>
+                          {tag}
                         </p>
-                        ))
-                      }
+                      ))}
                     </span>
                   </figcaption>
                 </Link>

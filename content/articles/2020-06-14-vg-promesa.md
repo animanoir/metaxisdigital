@@ -13,4 +13,5 @@ tags:
   - Experiencia virtual
 featuredImage: /images/ft-promesa.jpg
 ---
+
 ## Artículo en desarrollo

@@ -14,6 +14,7 @@ tags:
   - Computación
 featuredImage: /images/ft-civilization-cultura.jpg
 ---
+
 <!--StartFragment-->
 
 Civilization es un videojuego por turnos, dentro del género 4X (eXplore, eXpand, eXploit, eXterminate) creado por Sid Meier et al que gamifica el proceso evolutivo de la civilización humana en mecánicas simples que retratan los cambios que la sociedad ha vivido a lo largo de su historia. Pese a que va en su VI iteración, tomaré como referencia la V ya que ha sido la versión más popular hasta ahora.
