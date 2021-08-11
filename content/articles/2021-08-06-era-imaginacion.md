@@ -1,10 +1,10 @@
 ---
 templateKey: blog-post
-title: Metamodernidad
-slug: metamodernidad
-date: 2020-06-14T00:27:58.628Z
-dateModified: 2020-06-14T00:27:59.324Z
-description: La oscilación que nos mantendrá en equilibrio
+title: La era de la imaginación
+slug: era-imaginacion
+date: 2021-08-06T00:25:17.803Z
+dateModified: 2021-08-06T00:25:17.803Z
+description: Larga vida al verdadero artista metamoderno.
 featuredPost: false
 category: Filosofía
 tags:
@@ -13,12 +13,12 @@ tags:
   - Arte
   - Sociología
   - Filosofía
-featuredImage: /images/ft-era-imaginacion.jpg
+featuredImage: /images/posts/era-imaginacion/img-era-imaginacion.jpg
 ---
 
-“*It took the universe 10 billion years to create a species that could speak. It took that species 3 million
+“**It took the universe 10 billion years to create a species that could speak. It took that species 3 million
 years to create a communication tool called writing. Then just 12,000 years to create the printing press.
-500 years to create the computer.\*\*” - Charlie Magee, *The Age of Imagination\*
+500 years to create the computer**” - Charlie Magee, _The Age of Imagination"_
 
 _La era de la información_ fue la era
 

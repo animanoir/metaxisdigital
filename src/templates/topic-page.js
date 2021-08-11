@@ -48,7 +48,7 @@ const TopicPageTemplate = ({ pageContext }) => {
   return (
     <Layout pageType="Topic">
       <div className="topic-page-header"></div>
-      <div className="flex-layout">
+      <div className="flex-layout main-container">
         <div className="cards">
           <h2 id="articles-title"></h2>
           {edgesWithTopic.map(({ node }, index) => {

@@ -2,8 +2,8 @@
 templateKey: blog-post
 title: Civilization, o cómo gamificar nuestra historia
 slug: civilization-cultura
-date: 2020-06-14T00:25:17.803Z
-dateModified: 2020-06-14T00:25:17.871Z
+date: 2021-08-07T00:25:17.803Z
+dateModified: 2021-08-07T00:25:17.803Z
 description: ¿De dónde viene tu realidad? Averigua jugando.
 featuredPost: false
 category: Computación

@@ -18,8 +18,7 @@ const Topics = () => {
 
   return (
     <Layout>
-      <h2 className="page-header"></h2>
-      <div id="all-topics-list">
+      <div id="concepts-list" className="main-container">
         {data.allMarkdownRemark.group.map(topic => {
           let concepto = topic.fieldValue
           let conceptoDeburr = _.deburr(concepto)

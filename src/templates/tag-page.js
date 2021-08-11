@@ -48,9 +48,9 @@ function TagPageTemplate({ pageContext }) {
   return (
     <Layout pageType="Tag">
       <SEO title={tag} />
-      <div>
+      <div className="main-container">
         <h2 className="page-header">
-          <b>{tag}</b>:
+          Sobre <b>{tag}</b>:
         </h2>
         <div className="flex-layout">
           <div className="cards">
