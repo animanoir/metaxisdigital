@@ -61,7 +61,11 @@ class ArticleTemplate extends Component {
             />
           </div>
           <div class="main-container">
-            {similarPosts.length > 0 && <h3 id="similar-posts-header">+</h3>}
+            {similarPosts.length > 0 && (
+              <h3 id="similar-posts-header" className="rotate">
+                +
+              </h3>
+            )}
             <section>
               {similarPosts.map(({ node }) => {
                 return (

@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 
 import Header from "./header"
 import Footer from "./footer"
@@ -29,6 +30,18 @@ const Layout = ({ children }) => {
       />
       <div className="container">
         <main>{children}</main>
+      </div>
+      <div className="menu-footer">
+        <Link to="/conceptos">
+          <span className="header-links">
+            <b>.conceptos</b>
+          </span>
+        </Link>
+        <Link to="/acerca">
+          <span className="header-links">
+            <b>.acerca</b>
+          </span>
+        </Link>
       </div>
       <Footer />
     </>

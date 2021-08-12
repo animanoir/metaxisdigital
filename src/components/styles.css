@@ -1,6 +1,9 @@
 /* --------------------------------- Fuentes -------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
+/* ------------------------------ Media quierus ----------------------------- */
+@import url('./mq1000.css');
+
 /* Global Styles */
 * {
   margin: 0;
@@ -83,7 +86,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem
+  padding: 0 1rem;
 }
 
 #nav {
@@ -119,26 +122,7 @@ body {
   font-weight: 700;
 }
 
-#search-box {
-  position: relative;
-}
 
-#search-box form input {
-  padding: 7px;
-  background-color: rgba(255,255,255,0);
-  border: 1px solid rgba(255,255,255,0);
-  border-radius: 4px;
-  font-size: 13px;
-  margin-left: 16px;
-}
-
-#search-box svg {
-  position: absolute;
-  right: 6px;
-  top: 6px;
-  font-size: 20px;
-  color: #686868;
-}
 
 /* Menu Styles */
 #menu {
@@ -521,7 +505,7 @@ footer {
 .article-container {
   display: flex;
   flex-direction: column;
-  width:60%;
+  width: 60%;
   margin: 10rem auto;
 }
 
@@ -546,7 +530,7 @@ footer {
 
 .article-image {
   width: 100%;
-  height:20%!important;
+  height: 20% !important;
   padding-bottom: 0;
 }
 
@@ -569,6 +553,7 @@ footer {
 }
 
 #similar-posts-header {
+  display: inline-block;
   margin-bottom: .5rem;
   font-size: 10rem;
 }
@@ -624,14 +609,15 @@ footer {
   justify-content: space-between;
 }
 
-.colab-foto{
+.colab-foto {
   width: 50%;
   margin-right: 1rem;
   border-radius: 50%;
 }
 
-.colab-info{
-  font-size: 2.3rem;
+.colab-info {
+  font-size: 2.5rem;
+  line-height: 2;
   margin: auto 0;
   word-break: break-all;
   font-family: 'Lora', serif;
@@ -742,9 +728,6 @@ footer {
 
 /* ------------------------------ Media queries ----------------------------- */
 
-
-
-
 /* @media (min-width: 1000px) {
 
 
@@ -806,133 +789,6 @@ footer {
   transition: all 0.4s ease;
 }
 
-@media (max-width: 1000px) {
-  .card-description {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-  }
-
-  .container {
-    width: 95vw;
-  }
-
-  .post-header {
-    margin-bottom: 5rem;
-  }
-
-  .article-tags{
-    justify-content: flex-start;
-    flex-direction: column;
-    font-size: 2rem;
-    line-height: 2;
-  }
-
-  .card-image {
-    margin-top: 1rem;
-  }
-
-  .tag {
-    padding: 0;
-  }
-
-  #nav ul,
-  #search-box {
-    display: none;
-  }
-
-  #menu,
-  .menu-button {
-    display: none;
-  }
-
-  #featured {
-    height: auto;
-    display: block;
-    margin-top: 5rem;
-    grid-template-columns: repeat(3, 248px);
-    grid-template-rows: 138px 138px;
-  }
-
-  .featured-main figcaption h2 {
-    width: 100%;
-    font-size: 24px;
-  }
-
-
-  .flex-layout {
-    flex-direction: column;
-  }
-
-  .cards {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .card-styles {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #articles-title {
-    margin-right: 0;
-  }
-
-  .card-image {
-    width: 100%;
-    height: 100%;
-  }
-
-  .card-container {
-    padding-right: 0;
-  }
-
-
-  .card-styles figcaption h3 {
-    font-size: 18px;
-  }
-
-  .article-image {
-    width: 100%;
-    height: auto;
-  }
-
-  .sidebar {
-    width: 100%;
-    padding-left: 0;
-    border: 0;
-  }
-
-  #footer {
-    padding: 20px 0;
-  }
-
-  #footer .container {
-    flex-direction: column;
-  }
-
-  .footer-social-icons {
-    display: block;
-    width: 100%;
-  }
-
-  .article-container {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .article-title {
-    font-size: 4rem;
-  }
-
-  .licencia {
-    margin: 1rem;
-  }
-
-  .icon-container {
-    width: 100%;
-  }
-}
 
 .licencia {
   margin-right: 1rem;
@@ -958,7 +814,7 @@ footer {
   margin: 7rem auto;
 }
 
-.util-margintop{
+.util-margintop {
   margin-top: 10rem;
 }
 
@@ -969,3 +825,16 @@ blockquote {
   margin-left: 40px;
   margin-right: 40px;
 }
+
+.menu-footer {
+  display:none;
+}
+
+/* ENDLESS ROTATE */
+.rotate{
+  animation: rotate 10s linear infinite;
+}
+@keyframes rotate{
+  to{ transform: rotate(360deg); }
+}
+

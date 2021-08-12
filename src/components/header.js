@@ -23,6 +23,7 @@ const Header = ({ siteTitle, siteDescription, menuOpen, setMenuOpen }) => {
     "conciencia",
     "antimateria",
     "materia",
+    "capitalismo",
     "tú",
   ]
   const antitesisPalabras = [
@@ -32,7 +33,7 @@ const Header = ({ siteTitle, siteDescription, menuOpen, setMenuOpen }) => {
     "antitesis",
     "antimateria",
     "máquinas",
-    "taxis",
+    "socialismo",
     "luna",
     "antimateria",
     "nada",
